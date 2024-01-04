@@ -20,7 +20,7 @@ app.use('/api/task',router)
 app.use('/api/auth',authRouter)
 
 
-const port = 8000;
+const port = process.env.PORT || 3000;
 
 
 app.listen(port, () => {
